@@ -16,6 +16,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="30dp"
         android:paddingHorizontal="30dp"
         android:paddingBottom="10dp">
 
@@ -40,6 +41,12 @@
         android:id="@+id/signin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Sign In" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New? Sign Up" />
 
 </LinearLayout>

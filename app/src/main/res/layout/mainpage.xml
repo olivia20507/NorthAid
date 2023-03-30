@@ -16,21 +16,33 @@
         android:orientation="vertical">
         <include layout="@layout/toolbarlayout"/>
 
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-    </LinearLayout>
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
 
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true"
-        android:id="@+id/navigationView"
-        android:layout_gravity="left"
-        app:menu="@menu/drawer_menu"
-        />
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="번호"
+                android:background="#B2EBF4"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="이름"
+                android:background="#B7F0B1"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
