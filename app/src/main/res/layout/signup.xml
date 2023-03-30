@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="한국 시민권을 보유하고 있습니까?"
-        android:paddingHorizontal="30dp">
+        android:paddingHorizontal="30dp"/>
 
     <CheckBox
         android:id="@+id/cityes"

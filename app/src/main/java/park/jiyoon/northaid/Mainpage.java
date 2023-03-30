@@ -131,7 +131,7 @@ public class Mainpage extends AppCompatActivity {
 
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             // listitem layout을 inflate 해준다.(memory에 올려준다)
-            convertView = inflater.inflate(R.layout.listitem_layout, viewGroup, false);
+            convertView = inflater.inflate(R.layout.listitemlayout, viewGroup, false);
 
             TextView tv_num = (TextView) convertView.findViewById(R.id.tv_num);
             TextView tv_name = (TextView) convertView.findViewById(R.id.tv_name);
@@ -150,41 +150,4 @@ public class Mainpage extends AppCompatActivity {
             return convertView;  //뷰 객체 반환
         }
     }
-
-            @Override
-            public Object getItem(int position) {
-                return items.get(position);
-            }
-
-            @Override
-            public long getItemId(int position) {
-                return position;
-            }
-
-            @Override
-            public View getView(int position, View convertView, ViewGroup viewGroup) {
-                final Context context = viewGroup.getContext();
-                final Item item = items.get(position);
-
-                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                // listitem layout을 inflate 해준다.(memory에 올려준다)
-                convertView = inflater.inflate(R.layout.listitemlayout, viewGroup, false);
-
-                TextView tv_num = (TextView) convertView.findViewById(R.id.tv_num);
-                TextView tv_name = (TextView) convertView.findViewById(R.id.tv_name);
-
-                tv_num.setText(item.getNum());
-                tv_name.setText(item.getName());
-
-                //각 아이템 선택 event
-                convertView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Toast.makeText(context, item.getNum()+" "+item.getName()+" clicked!", Toast.LENGTH_SHORT).show();
-                    }
-                });
-
-                return convertView;  //뷰 객체 반환
-            }
-        }
 }
