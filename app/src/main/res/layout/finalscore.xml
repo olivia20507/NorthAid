@@ -10,8 +10,7 @@
         android:layout_height="wrap_content"
         android:text="Score"
         android:padding="50dp"
-        android:gravity="center"
-        android:textFontWeight=""/>
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/textView10"

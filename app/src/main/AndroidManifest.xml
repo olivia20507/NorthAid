@@ -12,11 +12,18 @@
         android:theme="@style/Theme.NorthAid"
         tools:targetApi="31" >
         <activity
-            android:name=".Mainpage"
+            android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Mainpage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
             </intent-filter>
         </activity>
         <activity
