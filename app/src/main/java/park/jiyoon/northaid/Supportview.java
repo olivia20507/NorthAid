@@ -21,7 +21,7 @@ public class Supportview extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.supportview);
 
-        ListView listview = findViewById(R.id.listView);
+        ListView listview = findViewById(R.id.listView2);
         ListViewAdapter adapter = new ListViewAdapter();
 
         //Adapter 안에 아이템의 정보 담기
