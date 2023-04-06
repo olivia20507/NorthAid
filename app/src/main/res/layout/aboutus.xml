@@ -19,4 +19,18 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         android:padding="30dp"/>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:padding="30dp"/>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us: "
+        android:padding="30dp"/>
 </LinearLayout>
