@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,18 +18,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class Matchpage extends AppCompatActivity {
+public class Matchpage extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Object binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        setContentView(R.layout.matchpage);
 
-        //어댑터 생성
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.spinner_array, R.layout.spinner_layout);
-        //드롭다운뷰 연결
-        adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
-        //UI와 연결
-        binding.homeSpinner.setAdapter(adapter);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
+                R.array.match_array, android.R.layout.simple_spinner_item);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter2);
+        spinner.setOnItemSelectedListener(this);
+
+
         ListView listview = findViewById(R.id.listView4);
         ListViewAdapter adapter = new ListViewAdapter();
 
@@ -68,7 +72,7 @@ public class Matchpage extends AppCompatActivity {
 
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             // listitem layout을 inflate 해준다.(memory에 올려준다)
-            convertView = inflater.inflate(R.layout.listitem_layout, viewGroup, false);
+            convertView = inflater.inflate(R.layout.listitemlayout, viewGroup, false);
 
             TextView tv_num = (TextView) convertView.findViewById(R.id.tv_num);
             TextView tv_name = (TextView) convertView.findViewById(R.id.tv_name);
@@ -89,27 +93,21 @@ public class Matchpage extends AppCompatActivity {
     }
 
     // onCreate 바깥쪽
-//Spinner Listener
-    public void spinnerListener() {
-        binding.homeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-            //선택 시 작동기능
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 1:
-                        break;
-                    case 2:
-                        break;
-                    case 3:
-                        break;
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        switch (position) {
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+        }
     }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
+
 }
