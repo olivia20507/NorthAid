@@ -34,6 +34,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Playgame"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Finalscore"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Matchdetail"
             android:exported="true">
             <intent-filter>
