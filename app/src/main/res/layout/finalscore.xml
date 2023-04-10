@@ -8,15 +8,26 @@
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Score"
+        android:text="80%"
         android:padding="50dp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textSize="60dp"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer:"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="20dp"
+        android:gravity="center_vertical"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Q1: 사과"
         android:paddingHorizontal="30dp"
         android:paddingTop="20dp"
         android:gravity="center_vertical"/>
@@ -25,7 +36,7 @@
         android:id="@+id/textView11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Q2: 포도"
         android:paddingHorizontal="30dp"
         android:paddingTop="20dp"
         android:gravity="center_vertical"/>
@@ -34,7 +45,7 @@
         android:id="@+id/textView12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Q3: 사자"
         android:paddingHorizontal="30dp"
         android:paddingTop="20dp"
         android:gravity="center_vertical"/>
@@ -43,7 +54,7 @@
         android:id="@+id/textView13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Q4: 신문"
         android:paddingHorizontal="30dp"
         android:paddingTop="20dp"
         android:gravity="center_vertical"/>
@@ -52,7 +63,7 @@
         android:id="@+id/textView14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Q5: 사진"
         android:paddingHorizontal="30dp"
         android:paddingTop="20dp"
         android:gravity="center_vertical"/>
@@ -61,7 +72,7 @@
         android:id="@+id/textView15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Q6: 병"
         android:paddingHorizontal="30dp"
         android:paddingTop="20dp"
         android:gravity="center_vertical"/>
@@ -70,7 +81,7 @@
         android:id="@+id/textView16"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Q7: 책"
         android:paddingHorizontal="30dp"
         android:paddingTop="20dp"
         android:gravity="center_vertical"/>
@@ -79,7 +90,7 @@
         android:id="@+id/textView17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Q8: 달력"
         android:paddingHorizontal="30dp"
         android:paddingTop="20dp"
         android:gravity="center_vertical"/>
@@ -88,7 +99,7 @@
         android:id="@+id/textView18"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Q9: 컴퓨터"
         android:paddingHorizontal="30dp"
         android:paddingTop="20dp"
         android:gravity="center_vertical"/>
@@ -97,7 +108,7 @@
         android:id="@+id/textView19"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Q10: 물티슈"
         android:paddingHorizontal="30dp"
         android:paddingTop="20dp"
         android:gravity="center_vertical"/>

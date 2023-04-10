@@ -6,33 +6,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_height="206dp"
+        app:srcCompat="@drawable/apple"
+        android:paddingTop="20dp"/>
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:paddingHorizontal="30dp"
+        android:text="사과"
+        android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:paddingHorizontal="30dp"
+        android:text="포도"
+        android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/button4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:text="사진"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Submit" />
 </LinearLayout>

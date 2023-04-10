@@ -1,13 +1,20 @@
 <resources>
     <string name="app_name"></string>
     <string-array name="match_array">
-        <item>type1</item>
-        <item>type2</item>
-        <item>type3</item>
+        <item>국어</item>
+        <item>영어</item>
+        <item>수학</item>
+        <item>사회</item>
+        <item>과학</item>
+        <item>역사</item>
+        <item>기타</item>
     </string-array>
     <string-array name="support_array">
-        <item>type1</item>
-        <item>type2</item>
+        <item>의료</item>
+        <item>교육</item>
+        <item>생활</item>
+        <item>국어</item>
+        <item>영어</item>
         <item>type3</item>
     </string-array>
 </resources>
