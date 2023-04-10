@@ -1,8 +1,11 @@
 package park.jiyoon.northaid;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -42,11 +45,11 @@ public class Playgame extends AppCompatActivity {
                 {"사자", "lion"},
                 {"신문", "news"},
                 {"사진", "photo"},
-                {"병", "bottle"},
+                {"병", "bottles"},
                 {"책", "book"},
                 {"달력", "calendar"},
-                {"컴퓨터", "computer"},
-                {"물티슈", "watertissue"}};
+                {"컴퓨터", "compu"},
+                {"물티슈", "handwipes"}};
 
         Button button = findViewById(R.id.submit);
         button.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +57,7 @@ public class Playgame extends AppCompatActivity {
             public void onClick(View view) {
                 if (cnt[0] == 10) {
                     Intent it = new Intent(Playgame.this, Finalscore.class);
+                    Log.d(TAG, String.valueOf(cnt[1]));
                     it.putExtra("score", cnt[1]);
                     startActivity(it);
                 }
@@ -80,6 +84,7 @@ public class Playgame extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btn1.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.lighterog));
+                Log.d(TAG, btn1.getText().toString()+"    "+answers[cnt[0]-1][0]);
                 if (btn1.getText().toString() == answers[cnt[0]-1][0]){
                     cnt[1] += 1;
                 }
@@ -90,6 +95,7 @@ public class Playgame extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btn2.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.lighterog));
+                Log.d(TAG, btn2.getText().toString()+"    "+answers[cnt[0]-1][0]);
                 if (btn2.getText().toString() == answers[cnt[0]-1][0]){
                     cnt[1] += 1;
                 }
@@ -100,6 +106,7 @@ public class Playgame extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btn3.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.lighterog));
+                Log.d(TAG, btn3.getText().toString()+"    "+answers[cnt[0]-1][0]);
                 if (btn3.getText().toString() == answers[cnt[0]-1][0]){
                     cnt[1] += 1;
                 }

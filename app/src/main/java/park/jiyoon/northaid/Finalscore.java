@@ -1,6 +1,9 @@
 package park.jiyoon.northaid;
 
+import static android.content.ContentValues.TAG;
+
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -14,7 +17,7 @@ public class Finalscore extends AppCompatActivity {
         setContentView(R.layout.finalscore);
 
         TextView tv = findViewById(R.id.textView9);
-        int score = getIntent().getIntExtra("score", 0)/10*100;
+        String score = String.valueOf(getIntent().getIntExtra("score", 0) * 10);
         tv.setText(score+"%");
     }
 }
