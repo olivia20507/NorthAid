@@ -7,30 +7,29 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView12"
         android:layout_width="match_parent"
         android:layout_height="230dp"
-        tools:srcCompat="@tools:sample/avatars"
-        android:paddingTop="30dp"/>
+        app:srcCompat="@drawable/northaid" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Who are we?"
         android:padding="30dp"/>
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Our Vision"
         android:padding="30dp"/>
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contact Us: "
+        android:text="Contact Us:"
         android:padding="30dp"/>
 </LinearLayout>
