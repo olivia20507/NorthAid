@@ -36,9 +36,12 @@ public class Mainpage extends AppCompatActivity {
         ListViewAdapter adapter = new ListViewAdapter();
 
         //Adapter 안에 아이템의 정보 담기
-        adapter.addItem(new Item("1", "item1"));
-        adapter.addItem(new Item("2", "item2"));
-        adapter.addItem(new Item("3", "item3"));
+        adapter.addItem(new Item("의료", "[서울아산병원] 2023 희망나누기 캠페인 수술치료비 지원사업 안내(연중상시)"));
+        adapter.addItem(new Item("교육", "[북한인권시민연합] 반딧불이 멘토링 참가 탈북 청소년(멘티) 모집(~4.17)"));
+        adapter.addItem(new Item("교육", "2023학년도 특별전형 입시 자료집 (일반대)"));
+        adapter.addItem(new Item("의료", "남북하나재단 의료지원"));
+        adapter.addItem(new Item("생활", "북한이탈주민정책: 정착지원제도:지원제도"));
+        adapter.addItem(new Item("교육", "2023년 상반기 장학생 선발 공고(~4.25)"));
 
         //리스트뷰에 Adapter 설정
         listview.setAdapter(adapter);

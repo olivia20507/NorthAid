@@ -36,9 +36,9 @@ public class Matchpage extends AppCompatActivity implements AdapterView.OnItemSe
         ListViewAdapter adapter = new ListViewAdapter();
 
         //Adapter 안에 아이템의 정보 담기
-        adapter.addItem(new Item("1", "item1"));
-        adapter.addItem(new Item("2", "item2"));
-        adapter.addItem(new Item("3", "item3"));
+        adapter.addItem(new Item("중학교", "홍길동"));
+        adapter.addItem(new Item("고등학교", "이몽룡"));
+        adapter.addItem(new Item("기초", "윤동주"));
 
         //리스트뷰에 Adapter 설정
         listview.setAdapter(adapter);
