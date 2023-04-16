@@ -18,24 +18,26 @@
         android:layout_height="wrap_content"
         android:text="Who are we?"
         android:padding="30dp"/>
-
     <TextView
         android:id="@+id/textView25"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Our Vision"
-        android:padding="30dp"/>
-
+        android:text="NorthAid is a nonprofit business focused on creating Harmony. Our goal is to assist young adult North Korean refugees in developing essential skills in order for them to be able to function as a healthy working part of society and gain stability.
+Our mission is to provide a helping hand to North Korean refugees by providing a platform to help them live their lives independently.
+"
+        android:padding="30dp" />
     <TextView
         android:id="@+id/textView24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Contact Us:"
+        android:padding="30dp"/>
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone: 010-XXXX-XXXX
+Email: Northaid@gmail.com
+"
         android:padding="30dp"/>
 </LinearLayout>

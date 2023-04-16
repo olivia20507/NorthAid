@@ -18,7 +18,7 @@
         android:id="@+id/citizenship"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="한국 시민권을 보유하고 있습니까?"
+        android:text="Are you residing in South Korea?"
         android:paddingHorizontal="30dp"/>
 
     <CheckBox
@@ -33,26 +33,49 @@
         android:layout_height="wrap_content"
         android:text="No" />
 
-
-    <CheckBox
-        android:id="@+id/checkBox2"
+    <TextView
+        android:id="@+id/age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CheckBox" />
-
-    <CheckBox
-        android:id="@+id/checkBox4"
+        android:text="How old are you?"
+        android:paddingHorizontal="30dp"/>
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CheckBox" />
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type number only" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Do you have any meidcal conditions?"
         android:paddingHorizontal="30dp"/>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write any medical condition you have." />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you have an income? If so, how much?"
+        android:paddingHorizontal="30dp"/>
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -61,32 +84,15 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="hint" />
+            android:hint="Yes:" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="hint" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="hint" />
-        </com.google.android.material.textfield.TextInputLayout>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Submit" />
 </LinearLayout>
