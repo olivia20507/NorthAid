@@ -98,8 +98,8 @@ public class Supportview extends AppCompatActivity implements AdapterView.OnItem
                 adapter = new ListViewAdapter();
 
                 //Adapter 안에 아이템의 정보 담기
-                adapter.addItem(new SupportItem("1", "[서울아산병원] 2023 희망나누기 캠페인 수술치료비 지원사업 안내(연중상시)", ""));
-                adapter.addItem(new SupportItem("2", "남북하나재단 의료지원", ""));
+                adapter.addItem(new SupportItem("1", "[서울아산병원] 2023 희망나누기 캠페인 수술치료비 지원사업 안내(연중상시)", "https://www.koreahana.or.kr/home/kor/board.do?menuPos=60&act=detail&idx=17667"));
+                adapter.addItem(new SupportItem("2", "남북하나재단 의료지원", "https://www.koreahana.or.kr/home/kor/contents.do?menuPos=8"));
 
                 //리스트뷰에 Adapter 설정
                 listview.setAdapter(adapter);
@@ -108,9 +108,9 @@ public class Supportview extends AppCompatActivity implements AdapterView.OnItem
                 adapter = new ListViewAdapter();
 
                 //Adapter 안에 아이템의 정보 담기
-                adapter.addItem(new SupportItem("1", "[북한인권시민연합] 반딧불이 멘토링 참가 탈북 청소년(멘티) 모집(~4.17)", ""));
-                adapter.addItem(new SupportItem("2", "2023학년도 특별전형 입시 자료집 (일반대)", ""));
-                adapter.addItem(new SupportItem("3", "2023년 상반기 장학생 선발 공고(~4.25)", ""));
+                adapter.addItem(new SupportItem("1", "[북한인권시민연합] 반딧불이 멘토링 참가 탈북 청소년(멘티) 모집(~4.17)", "https://www.koreahana.or.kr/home/kor/board.do?menuPos=60&act=detail&idx=17663"));
+                adapter.addItem(new SupportItem("2", "2023학년도 특별전형 입시 자료집 (일반대)", "https://unikorea.go.kr/unikorea/business/NKDefectorsPolicy/archive/?boardId=bbs_0000000000000012&mode=view&searchCondition=all&searchKeyword=&cntId=54186&category=&pageIdx=1"));
+                adapter.addItem(new SupportItem("3", "2023년 상반기 장학생 선발 공고(~4.25)", "https://www.koreahana.or.kr/home/kor/board.do?menuPos=54&act=detail&idx=17633"));
 
                 //리스트뷰에 Adapter 설정
                 listview.setAdapter(adapter);
@@ -119,7 +119,7 @@ public class Supportview extends AppCompatActivity implements AdapterView.OnItem
                 adapter = new ListViewAdapter();
 
                 //Adapter 안에 아이템의 정보 담기
-                adapter.addItem(new SupportItem("1", "북한이탈주민정책: 정착지원제도:지원제도", ""));
+                adapter.addItem(new SupportItem("1", "북한이탈주민정책: 정착지원제도:지원제도", "https://www.unikorea.go.kr/unikorea/business/NKDefectorsPolicy/settlement/System/"));
 
                 //리스트뷰에 Adapter 설정
                 listview.setAdapter(adapter);
