@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
-        <item android:title="지원사업"
+        <item android:title="Support"
             android:id="@+id/item1" />
-        <item android:title="과외매칭"
+        <item android:title="Class Matching"
             android:id="@+id/item2"/>
-        <item android:title="게임"
+        <item android:title="Word Game"
             android:id="@+id/item3"/>
         <item android:title="About Us"
             android:id="@+id/item4"/>

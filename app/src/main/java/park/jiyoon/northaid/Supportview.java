@@ -1,6 +1,8 @@
 package park.jiyoon.northaid;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +21,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
 public class Supportview extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+
+    ListView listview;
+    ListViewAdapter adapter;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,21 +37,13 @@ public class Supportview extends AppCompatActivity implements AdapterView.OnItem
         spinner.setAdapter(adapter2);
         spinner.setOnItemSelectedListener(this);
 
-        ListView listview = findViewById(R.id.listView2);
-        ListViewAdapter adapter = new ListViewAdapter();
+        listview = findViewById(R.id.listView2);
 
-        //Adapter 안에 아이템의 정보 담기
-        adapter.addItem(new Item("1", "item1"));
-        adapter.addItem(new Item("2", "item2"));
-        adapter.addItem(new Item("3", "item3"));
-
-        //리스트뷰에 Adapter 설정
-        listview.setAdapter(adapter);
     }
     public class ListViewAdapter extends BaseAdapter {
-        ArrayList<Item> items = new ArrayList<Item>();
+        ArrayList<SupportItem> items = new ArrayList<SupportItem>();
 
-        public void addItem(Item item) {
+        public void addItem(SupportItem item) {
             items.add(item);
         }
 
@@ -67,7 +65,7 @@ public class Supportview extends AppCompatActivity implements AdapterView.OnItem
         @Override
         public View getView(int position, View convertView, ViewGroup viewGroup) {
             final Context context = viewGroup.getContext();
-            final Item item = items.get(position);
+            final SupportItem item = items.get(position);
 
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             // listitem layout을 inflate 해준다.(memory에 올려준다)
@@ -84,6 +82,8 @@ public class Supportview extends AppCompatActivity implements AdapterView.OnItem
                 @Override
                 public void onClick(View view) {
                     Toast.makeText(context, item.getNum()+" "+item.getName()+" clicked!", Toast.LENGTH_SHORT).show();
+                    Intent it = new Intent(Intent.ACTION_VIEW, Uri.parse(item.getUrl()));
+                    startActivity(it);
                 }
             });
 
@@ -94,11 +94,35 @@ public class Supportview extends AppCompatActivity implements AdapterView.OnItem
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         switch (position) {
+            case 0:
+                adapter = new ListViewAdapter();
+
+                //Adapter 안에 아이템의 정보 담기
+                adapter.addItem(new SupportItem("1", "[서울아산병원] 2023 희망나누기 캠페인 수술치료비 지원사업 안내(연중상시)", ""));
+                adapter.addItem(new SupportItem("2", "남북하나재단 의료지원", ""));
+
+                //리스트뷰에 Adapter 설정
+                listview.setAdapter(adapter);
+                break;
             case 1:
+                adapter = new ListViewAdapter();
+
+                //Adapter 안에 아이템의 정보 담기
+                adapter.addItem(new SupportItem("1", "[북한인권시민연합] 반딧불이 멘토링 참가 탈북 청소년(멘티) 모집(~4.17)", ""));
+                adapter.addItem(new SupportItem("2", "2023학년도 특별전형 입시 자료집 (일반대)", ""));
+                adapter.addItem(new SupportItem("3", "2023년 상반기 장학생 선발 공고(~4.25)", ""));
+
+                //리스트뷰에 Adapter 설정
+                listview.setAdapter(adapter);
                 break;
             case 2:
-                break;
-            case 3:
+                adapter = new ListViewAdapter();
+
+                //Adapter 안에 아이템의 정보 담기
+                adapter.addItem(new SupportItem("1", "북한이탈주민정책: 정착지원제도:지원제도", ""));
+
+                //리스트뷰에 Adapter 설정
+                listview.setAdapter(adapter);
                 break;
         }
     }

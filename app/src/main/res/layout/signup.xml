@@ -9,26 +9,28 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
-        android:layout_height="204dp"
-        android:paddingTop="30dp"
-        android:paddingBottom="20dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/ic_main" />
 
     <TextView
         android:id="@+id/citizenship"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Are you residing in South Korea?"
-        android:paddingHorizontal="30dp"/>
+        android:paddingHorizontal="30dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"/>
 
     <CheckBox
         android:id="@+id/cityes"
+        android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Yes" />
 
     <CheckBox
         android:id="@+id/citno"
+        android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No" />
@@ -38,10 +40,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="How old are you?"
-        android:paddingHorizontal="30dp"/>
+        android:paddingHorizontal="30dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"/>
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -54,32 +60,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Do you have any meidcal conditions?"
-        android:paddingHorizontal="30dp"/>
+        android:paddingHorizontal="30dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Write any medical condition you have." />
 
+    </com.google.android.material.textfield.TextInputLayout>
+
     <TextView
         android:id="@+id/rate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Do you have an income? If so, how much?"
-        android:paddingHorizontal="30dp"/>
+        android:paddingHorizontal="30dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"/>
+
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
         android:text="No" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -87,12 +103,10 @@
             android:hint="Yes:" />
     </com.google.android.material.textfield.TextInputLayout>
 
-
-    </com.google.android.material.textfield.TextInputLayout>
-
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
         android:text="Submit" />
 </LinearLayout>

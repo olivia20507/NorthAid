@@ -1,6 +1,7 @@
 package park.jiyoon.northaid;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +20,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
 public class Matchpage extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+    ListView listview;
+    ListViewAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,16 +36,8 @@ public class Matchpage extends AppCompatActivity implements AdapterView.OnItemSe
         spinner.setOnItemSelectedListener(this);
 
 
-        ListView listview = findViewById(R.id.listView4);
-        ListViewAdapter adapter = new ListViewAdapter();
+        listview = findViewById(R.id.listView4);
 
-        //Adapter 안에 아이템의 정보 담기
-        adapter.addItem(new Item("중학교", "홍길동"));
-        adapter.addItem(new Item("고등학교", "이몽룡"));
-        adapter.addItem(new Item("기초", "윤동주"));
-
-        //리스트뷰에 Adapter 설정
-        listview.setAdapter(adapter);
     }
     public class ListViewAdapter extends BaseAdapter {
         ArrayList<Item> items = new ArrayList<Item>();
@@ -85,6 +81,8 @@ public class Matchpage extends AppCompatActivity implements AdapterView.OnItemSe
                 @Override
                 public void onClick(View view) {
                     Toast.makeText(context, item.getNum()+" "+item.getName()+" clicked!", Toast.LENGTH_SHORT).show();
+                    Intent it = new Intent(Matchpage.this, Matchdetail.class);
+                    startActivity(it);
                 }
             });
 
@@ -96,11 +94,82 @@ public class Matchpage extends AppCompatActivity implements AdapterView.OnItemSe
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         switch (position) {
+            case 0:
+                adapter = new ListViewAdapter();
+
+                //Adapter 안에 아이템의 정보 담기
+                adapter.addItem(new Item("middle\nschool", "홍길동"));
+                adapter.addItem(new Item("high\nschool", "이몽룡"));
+                adapter.addItem(new Item("basic\nclass", "윤동주"));
+
+                //리스트뷰에 Adapter 설정
+                listview.setAdapter(adapter);
+                break;
             case 1:
+                adapter = new ListViewAdapter();
+
+                //Adapter 안에 아이템의 정보 담기
+                adapter.addItem(new Item("middle\nschool", "a"));
+                adapter.addItem(new Item("high\nschool", "b"));
+                adapter.addItem(new Item("basic\nclass", "c"));
+
+                //리스트뷰에 Adapter 설정
+                listview.setAdapter(adapter);
                 break;
             case 2:
+                adapter = new ListViewAdapter();
+
+                //Adapter 안에 아이템의 정보 담기
+                adapter.addItem(new Item("middle\nschool", "d"));
+                adapter.addItem(new Item("high\nschool", "e"));
+                adapter.addItem(new Item("basic\nclass", "f"));
+
+                //리스트뷰에 Adapter 설정
+                listview.setAdapter(adapter);
                 break;
             case 3:
+                adapter = new ListViewAdapter();
+
+                //Adapter 안에 아이템의 정보 담기
+                adapter.addItem(new Item("middle\nschool", "g"));
+                adapter.addItem(new Item("high\nschool", "h"));
+                adapter.addItem(new Item("basic\nclass", "i"));
+
+                //리스트뷰에 Adapter 설정
+                listview.setAdapter(adapter);
+                break;
+            case 4:
+                adapter = new ListViewAdapter();
+
+                //Adapter 안에 아이템의 정보 담기
+                adapter.addItem(new Item("middle\nschool", "j"));
+                adapter.addItem(new Item("high\nschool", "k"));
+                adapter.addItem(new Item("basic\nclass", "l"));
+
+                //리스트뷰에 Adapter 설정
+                listview.setAdapter(adapter);
+                break;
+            case 5:
+                adapter = new ListViewAdapter();
+
+                //Adapter 안에 아이템의 정보 담기
+                adapter.addItem(new Item("middle\nschool", "m"));
+                adapter.addItem(new Item("high\nschool", "n"));
+                adapter.addItem(new Item("basic\nclass", "o"));
+
+                //리스트뷰에 Adapter 설정
+                listview.setAdapter(adapter);
+                break;
+            case 6:
+                adapter = new ListViewAdapter();
+
+                //Adapter 안에 아이템의 정보 담기
+                adapter.addItem(new Item("middle\nschool", "p"));
+                adapter.addItem(new Item("high\nschool", "q"));
+                adapter.addItem(new Item("basic\nclass", "r"));
+
+                //리스트뷰에 Adapter 설정
+                listview.setAdapter(adapter);
                 break;
         }
     }

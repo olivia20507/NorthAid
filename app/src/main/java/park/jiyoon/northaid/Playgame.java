@@ -60,6 +60,7 @@ public class Playgame extends AppCompatActivity {
                     Log.d(TAG, String.valueOf(cnt[1]));
                     it.putExtra("score", cnt[1]);
                     startActivity(it);
+                    finish();
                 }
                 else {
                     cnt[0] = cnt[0] + 1;
