@@ -7,25 +7,24 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars"
-        android:padding="30dp"/>
+        android:layout_height="311dp"
+        android:paddingHorizontal="20dp"
+        app:srcCompat="@drawable/kwoman" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="과목: 국어"
-        android:paddingHorizontal="20dp"
-        android:paddingTop="20dp"/>
+        android:text="Subject: Korean"
+        android:paddingHorizontal="20dp" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="경력"
+        android:text="Profile: 홍길동, Degree in Korean Education"
         android:paddingHorizontal="20dp"
         android:paddingTop="20dp"/>
 
@@ -33,7 +32,7 @@
         android:id="@+id/textView22"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="calendy link"
+        android:text="Contact: 010-XXXX-XXXX, gildonghong@gmail.com"
         android:paddingHorizontal="20dp"
         android:paddingTop="20dp"/>
 </LinearLayout>
